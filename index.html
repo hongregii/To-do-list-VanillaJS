@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List - JSChallenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="fixed">
+    <form id="login-form">
+        <h1>What's your name?</h1>
+        <input class="username" type="text"/><input class="button" type="submit" placeholder="Log in" />
+    </form>
+    <div class="clock-box hidden">
+    <h2 class="clock">00:00:00</h2>
+    <h3 class="greeting">Hello!</h3>
+</div>
+    <form class="todo-form">
+        <input type="text" placeholder="Write a To-do and press Enter" required />
+    </form>
+    <ul class="todo-list hidden"></ul>
+</div>
+    <div class="quote-box hidden fixed"><h3 class="quote"></h3><h3 class="author"></h3></div>
+<div class="weather hidden">
+    <div class="weather__city"><i class="fa-solid fa-location-dot"></i><span>  </span></div>
+    <h3></h3>
+</div>
+    <script src="js/clock.js"></script>
+    <script src="js/greetings.js"></script>
+    <script src="js/quotesAndBg.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="https://kit.fontawesome.com/0b63eda7d7.js" crossorigin="anonymous"></script>
+    </body>
+</html>
