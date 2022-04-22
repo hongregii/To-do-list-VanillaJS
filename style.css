@@ -60,9 +60,17 @@ li span {
     left: 20px;
 }
 
+.username,
+.button {
+    border-radius: 7px;
+    display: inline;
+    height: 30px;
+    width: min-content;
+}
+
 .quote-box {
     position: relative;
-    top: 80%;
+    bottom: 10vh;
 }
 
 .fixed {
@@ -78,8 +86,9 @@ li span {
 }
 
 .weather {
-    position: relative;
-    top: 55%;
+    position:relative;
+    bottom: 2vh;
+    position: fixed;
     display: flex;
     width: 90vw;
     padding: 0px 30px;
