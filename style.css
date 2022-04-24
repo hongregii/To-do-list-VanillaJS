@@ -68,9 +68,13 @@ li span {
     width: min-content;
 }
 
+.clock-box {
+    position:absolute;
+}
+
 .quote-box {
-    position: relative;
-    bottom: 10vh;
+    position: absolute;
+    top: 10vh;
 }
 
 .fixed {
@@ -86,9 +90,8 @@ li span {
 }
 
 .weather {
-    position:relative;
-    bottom: 2vh;
-    position: fixed;
+    position: absolute;
+    bottom: 5vh;
     display: flex;
     width: 90vw;
     padding: 0px 30px;
@@ -99,4 +102,8 @@ li span {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.to-do {
+    display:absolute;
 }
