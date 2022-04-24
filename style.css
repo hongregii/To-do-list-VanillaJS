@@ -43,7 +43,7 @@ input:active {
 
 ul {
     background-color: rgba(0, 0, 0, 0.8);
-    font-size: 2em;
+    font-size: 1.5em;
     border-radius: 30px;
     padding: 20px;
     list-style: none;
@@ -60,6 +60,11 @@ li span {
     left: 20px;
 }
 
+#login-form {
+    position:absolute;
+    top: 50%
+}
+
 .username,
 .button {
     border-radius: 7px;
@@ -68,17 +73,25 @@ li span {
     width: min-content;
 }
 
+.grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 2fr 1fr 1fr;
+    z-index: -2;
+    height: 98vh;
+}
+
 .clock-box {
-    position:absolute;
+    grid-row: 3 / 4;
 }
 
 .quote-box {
-    position: absolute;
-    top: 10vh;
+    grid-row: 2 / 3;
 }
 
-.fixed {
-    position: fixed;
+.to-do {
+    position: absolute;
+    top: 60vh;
+    z-index: 23;
 }
 
 .clock {
@@ -90,12 +103,13 @@ li span {
 }
 
 .weather {
-    position: absolute;
+    grid-row: -2 / -1;
     bottom: 5vh;
     display: flex;
     width: 90vw;
     padding: 0px 30px;
     justify-content: space-between;
+    align-items: flex-end;
 }
 
 .weather__city {
@@ -104,6 +118,6 @@ li span {
     justify-content: space-between;
 }
 
-.to-do {
-    display:absolute;
+.greeting {
+    display: inline;
 }
